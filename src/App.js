@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Drawer from './Drawer'
 
 class App extends Component {
   render() {
@@ -56,9 +57,9 @@ class App extends Component {
                 <code>PUT /api/v1/festivals/:festivalID</code>
 
                 <code>DELETE /api/v1/festivals/:festivalID</code>
-
           </main>
         </div>
+        <Drawer />
       </div>
     );
   }

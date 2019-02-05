@@ -38,23 +38,22 @@ export default class Form extends Component {
 
     switch (this.state.method) {
       case 'GET':
-        submitGet(url)
+        this.submitGet(url)
         break
       case 'POST':
-        submitPost(url)
+        this.submitPost(url)
         break
       case 'PUT':
-        submitPut(url)
+        this.submitPut(url)
         break
       case 'DELETE':
-        submitDelete(url)
+        this.submitDelete(url)
         break
-        default
     }
   }
 
 
-  submitGet = (url) => {
+  submitGet = async (url) => {
     const response = await fetch(url, {
       method: this.state.method,
     })
@@ -62,7 +61,7 @@ export default class Form extends Component {
   }
 
 
-  submitPost = (url) => {
+  submitPost = async (url) => {
 
     const response = await fetch(url, {
       method: this.state.method,

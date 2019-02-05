@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- node
+notifications:
+  email: false
+deploy:
+  provider: heroku
+  api_key:
+    secure: X1iwZwLFdzoEAPEN3Q1sSbDoOBiebk4Y332NdwV/OAeef+ULMparPhL0gfGCg6AbJ+BKw47PLSe6f+go0nK8iv+f1RJryGpHlWAbiWFxCXz9TMWZqQEyEyz6Tl+V3YCpnqHJ9QQgotY723lUSk/OcJNFFbgmdxXXnOehMFXogszgOY6KCKrK9TJlu2fyDotSAMmyjD/U19fpsBri/7K3qdNm27N16Q69iyxlN+z2zEkfx5aNjZDS2H4p5pe5E0ZGW/nP55GOPIYLzcWXfAMTLxf6tifAuU7ZVZnXw9ezy6bjeJTP6ERBoUBQ0Y2Aommt2GJw1obFWdGw+6tEjeDrRtXaL45XNsgtaGVoRKmtWm8ZXMZKoK9KfscK5VSeZQzzfDJOCfzm/LJwY6DGDh7hAEq0+1alNvUiAaB5wjsJIaThgZObzqeTq1JEvTTMyi5Jw1Qm9zqay/dIJqB3SxVqsAxXdp98HmRNg53Wfqp/zHHMnDNhqyWCMP2I8VYn2Ma4zjEM//nKdeK23iCQ7sooXoq8tIq5xpsm/ZdHjlPeh54S34oi73f2OfrGlMLVmQhgciwxt52lakdX9eLcjbvloUcVcrif2M0D5zLTp+AlXNrmhHO8If9VHznNJwVorq+pYsp2SotSbzY2lbKCXOijtRxB0pYcwArihHttgUCutUs=
+  app: byob-frontend-ks-js
+  skip_cleanup: true

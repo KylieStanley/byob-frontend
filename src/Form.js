@@ -8,6 +8,7 @@ export default class Form extends Component {
       path: '/api/v1/states',
       databaseObj: {},
       idRequired: false
+      result: {}
     }
   }
 
@@ -58,7 +59,7 @@ export default class Form extends Component {
       method: this.state.method,
     })
     const result = await response.json()
-    console.log(result)
+    this.setState({ result })
   }
 
 
@@ -71,6 +72,7 @@ export default class Form extends Component {
        body: JSON.stringify(this.state.databaseObj)
     })
     const result = await response.json()
+    this.setState({ result })
   }
 
 
@@ -83,6 +85,7 @@ export default class Form extends Component {
        body: JSON.stringify(this.state.databaseObj)
     })
     const result = await response.json()
+    this.setState({ result })
   }
 
 
@@ -91,6 +94,7 @@ export default class Form extends Component {
       method: this.state.method
     })
     const result = await response.json()
+    this.setState({ result })
   }
 
   changeIdRequiredState = (event) => {
@@ -129,6 +133,10 @@ export default class Form extends Component {
           <option>/api/v1/states</option>
           <option className='option-id'>/api/v1/states/:id</option>
           <option>/api/v1/festivals</option>
+          <option>/api/v1/states/1</option>
+          <option>/api/v1/states?state_id=1</option>
+          <option>/api/v1/states/1/festivals</option>
+          <option>/api/v1/festivals/1</option>
         </select>
         { this.changeInputStyleOnStateChange() }
         <button type="submit">Send</button>

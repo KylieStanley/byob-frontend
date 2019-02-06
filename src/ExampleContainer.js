@@ -1,8 +1,9 @@
 import React from 'react'
 
-const ExampleContainer = () => {
+const ExampleContainer = (props) => {
   return (
-    <h2></h2>
+    <h2>Example Response:</h2>
+    <p>{props}</p>
   )
 }
 

@@ -40,8 +40,10 @@ export default class Drawer extends Component {
 
   changeTabClass = () => {
     if (this.state.showDrawer) {
+      document.body.style.overflow = 'scroll' 
       return "tab tab-view"
     } else {
+      document.body.style.overflow = 'hidden' 
       return "tab tab-hide"
     }
   }

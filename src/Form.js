@@ -11,7 +11,8 @@ export default class Form extends Component {
     }
   }
 
-  submitRequest = async (e) => {
+  submitRequest = (e) => {
+    console.log('request')
     e.preventDefault()
 
     const url = `https://byob-us-music-festivals.herokuapp.com${this.state.path}`
@@ -99,9 +100,10 @@ export default class Form extends Component {
   changeIdRequiredState = (event) => {
     event.preventDefault()
 
-
     event.currentTarget.childNodes.forEach(option => {
+
       if (option.selected) {
+        this.setState({ path: option.innerText})
         if (option.className === 'option-id') {
           this.setState({ idRequired: true })
         } else {
@@ -111,9 +113,16 @@ export default class Form extends Component {
     })
   }
 
+  updatePath = (e) => {
+    e.preventDefault()
+
+    const path = this.state.path.replace(':id', e.currentTarget.value)
+    this.setState({ path })
+  }
+
   changeInputStyleOnStateChange = () => {
     if (this.state.idRequired) {
-      return <input type='number'/>
+      return <input onChange={ this.updatePath } placeholder="Enter an ID number" type='number'/>
     } else {
       return 
     }
@@ -121,7 +130,7 @@ export default class Form extends Component {
 
   render() {
     return (
-      <form>
+      <form onSubmit={ this.submitRequest }>
         <select>
           <option>GET</option>
           <option>POST</option>
@@ -132,10 +141,9 @@ export default class Form extends Component {
           <option>/api/v1/states</option>
           <option className='option-id'>/api/v1/states/:id</option>
           <option>/api/v1/festivals</option>
-          <option>/api/v1/states/1</option>
-          <option>/api/v1/states?state_id=1</option>
-          <option>/api/v1/states/1/festivals</option>
-          <option>/api/v1/festivals/1</option>
+          <option className='option-id'>/api/v1/states?state_id=:id</option>
+          <option className='option-id'>/api/v1/states/:id/festivals</option>
+          <option className='option-id'>/api/v1/festivals/:id</option>
         </select>
         { this.changeInputStyleOnStateChange() }
         <button type="submit">Send</button>

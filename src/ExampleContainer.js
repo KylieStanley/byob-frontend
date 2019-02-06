@@ -1,10 +1,12 @@
 import React from 'react'
+import './ExampleContainer.css'
+
 
 const ExampleContainer = (props) => {
   return (
-    <div>
+    <div className="example-container">
       <h2>Example Response:</h2>
-       <p>{ JSON.stringify(props.example) }</p>
+       <pre><code>{ JSON.stringify(props.example, null, ' ') }</code></pre>
     </div>
   )
 }

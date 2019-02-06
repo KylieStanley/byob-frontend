@@ -8,7 +8,6 @@ export default class Form extends Component {
       path: '/api/v1/states',
       databaseObj: {},
       idRequired: false
-      result: {}
     }
   }
 
@@ -59,7 +58,7 @@ export default class Form extends Component {
       method: this.state.method,
     })
     const result = await response.json()
-    this.setState({ result })
+    this.props.handleResult(result)
   }
 
 
@@ -72,7 +71,7 @@ export default class Form extends Component {
        body: JSON.stringify(this.state.databaseObj)
     })
     const result = await response.json()
-    this.setState({ result })
+    this.props.handleResult(result)
   }
 
 
@@ -85,7 +84,7 @@ export default class Form extends Component {
        body: JSON.stringify(this.state.databaseObj)
     })
     const result = await response.json()
-    this.setState({ result })
+    this.props.handleResult(result)
   }
 
 
@@ -94,7 +93,7 @@ export default class Form extends Component {
       method: this.state.method
     })
     const result = await response.json()
-    this.setState({ result })
+    this.props.handleResult(result)
   }
 
   changeIdRequiredState = (event) => {

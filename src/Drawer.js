@@ -3,12 +3,18 @@ import './Drawer.css'
 import Form from './Form'
 import ExampleContainer from './ExampleContainer'
 
-class Drawer extends Component {
+
+export default class Drawer extends Component {
   constructor() {
     super()
     this.state = {
-      showDrawer: false
+      showDrawer: false,
+      example: {}
     }
+  }
+
+  handleResult = (example) => {
+    this.setState({ example })
   }
 
   changeDrawerDisplayState = (event) => {
@@ -51,12 +57,11 @@ class Drawer extends Component {
         </div>
 
         <div>
-          <Form />
-          <ExampleContainer />
+          <Form handleResult={ this.handleResult } />
+          <ExampleContainer example={ this.state.example } />
         </div>
       </div>
-    )    
-  }
+    )  
+  }  
 }
 
-export default Drawer

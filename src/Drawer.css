@@ -43,8 +43,8 @@
 
 .tab-hide {
   background-color: gray;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .mock-sidebar {

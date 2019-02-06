@@ -16,7 +16,6 @@ export default class Form extends Component {
   }
 
   submitRequest = (e) => {
-    console.log('request')
     e.preventDefault()
 
     const url = `https://byob-us-music-festivals.herokuapp.com${this.state.path}`
@@ -97,8 +96,15 @@ export default class Form extends Component {
     const response = await fetch(url, {
       method: this.state.method
     })
-    const result = await response.json()
-    this.props.handleResult(result)
+
+    if (response.ok) {
+      const result = await response.json()
+      this.props.handleResult(result)      
+    } else {
+      const responseStatusText = response.statusText
+      const responseStatusCode = response.status
+      this.props.handleResult({ responseStatusCode, responseStatusText })
+    }
   }
 
   changeIdRequiredState = (e) => {

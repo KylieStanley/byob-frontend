@@ -28,7 +28,7 @@ export default class Form extends Component {
           major_airport: 'Phoenix Sky Harbor International Airport',
           tourism_website: 'https://www.visitarizona.com'
         }
-      })
+      }, () => this.checkMethods(url))
     } else if (url.includes('festivals')) {
       this.setState({
         databaseObj: { 
@@ -36,11 +36,13 @@ export default class Form extends Component {
           start_end_dates: '2/9/19-2/10/19', 
           city: 'Chandler', 
           image: 'https://1b7ta73fjmj23201tc3suvsi-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/California-Roots-Hero-Pic-600x400.jpg',
-          state_id: 1 
+          state_id: 3 
         }
-      })
+      }, () => this.checkMethods(url))
     }
+  }
 
+  checkMethods = (url) => {
     switch (this.state.method) {
       case 'GET':
         this.submitGet(url)

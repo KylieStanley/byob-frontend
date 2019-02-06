@@ -137,7 +137,8 @@ export default class Form extends Component {
     } else {
       const responseStatusText = response.statusText
       const responseStatusCode = response.status
-      this.props.handleResult({ responseStatusCode, responseStatusText })
+      const responseErrorMessage = await response.json()
+      this.props.handleResult({ responseStatusCode, responseStatusText, responseErrorMessage })
     }
   }
 

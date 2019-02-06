@@ -11,11 +11,10 @@ export default class Form extends Component {
     }
   }
 
-
   submitRequest = async (e) => {
     e.preventDefault()
 
-    const url = `https://kylie-joel-byob.herokuapp.com${this.state.path}`
+    const url = `https://byob-us-music-festivals.herokuapp.com${this.state.path}`
 
     if (url.includes('states')) {
       this.setState({
@@ -58,12 +57,12 @@ export default class Form extends Component {
     const response = await fetch(url, {
       method: this.state.method,
     })
-    const result = response.json()
+    const result = await response.json()
+    console.log(result)
   }
 
 
   submitPost = async (url) => {
-
     const response = await fetch(url, {
       method: this.state.method,
       headers: {
@@ -71,19 +70,32 @@ export default class Form extends Component {
       },
        body: JSON.stringify(this.state.databaseObj)
     })
-    const result = response.json()
+    const result = await response.json()
   }
 
-  submitPut = (url) => {
 
+  submitPut = async (url) => {
+    const response = await fetch(url, {
+      method: this.state.method,
+      headers: {
+        'Content-Type': 'application/json'
+      },
+       body: JSON.stringify(this.state.databaseObj)
+    })
+    const result = await response.json()
   }
 
-  submitDelete = (url) => {
 
+  submitDelete = async (url) => {
+    const response = await fetch(url, {
+      method: this.state.method
+    })
+    const result = await response.json()
   }
 
   changeIdRequiredState = (event) => {
     event.preventDefault()
+
 
     event.currentTarget.childNodes.forEach(option => {
       if (option.selected) {

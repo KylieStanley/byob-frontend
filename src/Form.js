@@ -11,6 +11,10 @@ export default class Form extends Component {
     }
   }
 
+  updateMethod = (e) => {
+    this.setState({ method: e.target.options[e.target.selectedIndex].value })
+  }
+
   submitRequest = (e) => {
     console.log('request')
     e.preventDefault()
@@ -130,7 +134,7 @@ export default class Form extends Component {
   render() {
     return (
       <form onSubmit={ this.submitRequest }>
-        <select>
+        <select onChange={this.updateMethod}>
           <option>GET</option>
           <option>POST</option>
           <option>PUT</option>

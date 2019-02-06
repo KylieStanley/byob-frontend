@@ -11,11 +11,10 @@ export default class Form extends Component {
     }
   }
 
-
   submitRequest = async (e) => {
     e.preventDefault()
 
-    const url = `https://kylie-joel-byob.herokuapp.com${this.state.path}`
+    const url = `https://byob-us-music-festivals.herokuapp.com${this.state.path}`
 
     if (url.includes('states')) {
       this.setState({
@@ -58,12 +57,12 @@ export default class Form extends Component {
     const response = await fetch(url, {
       method: this.state.method,
     })
-    const result = response.json()
+    const result = await response.json()
+    this.props.handleResult(result)
   }
 
 
   submitPost = async (url) => {
-
     const response = await fetch(url, {
       method: this.state.method,
       headers: {
@@ -71,19 +70,35 @@ export default class Form extends Component {
       },
        body: JSON.stringify(this.state.databaseObj)
     })
-    const result = response.json()
+    const result = await response.json()
+    this.props.handleResult(result)
   }
 
-  submitPut = (url) => {
 
+  submitPut = async (url) => {
+    const response = await fetch(url, {
+      method: this.state.method,
+      headers: {
+        'Content-Type': 'application/json'
+      },
+       body: JSON.stringify(this.state.databaseObj)
+    })
+    const result = await response.json()
+    this.props.handleResult(result)
   }
 
-  submitDelete = (url) => {
 
+  submitDelete = async (url) => {
+    const response = await fetch(url, {
+      method: this.state.method
+    })
+    const result = await response.json()
+    this.props.handleResult(result)
   }
 
   changeIdRequiredState = (event) => {
     event.preventDefault()
+
 
     event.currentTarget.childNodes.forEach(option => {
       if (option.selected) {
@@ -117,6 +132,10 @@ export default class Form extends Component {
           <option>/api/v1/states</option>
           <option className='option-id'>/api/v1/states/:id</option>
           <option>/api/v1/festivals</option>
+          <option>/api/v1/states/1</option>
+          <option>/api/v1/states?state_id=1</option>
+          <option>/api/v1/states/1/festivals</option>
+          <option>/api/v1/festivals/1</option>
         </select>
         { this.changeInputStyleOnStateChange() }
         <button type="submit">Send</button>

@@ -1,6 +1,17 @@
 .drawer {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.drawer-hide {
+  background-color: red;
+}
+
+.drawer-view {
   position: absolute;
-  bottom: 0;
+  background-color: orange;
+  top: 160px;
 }
 
 .tab-container {

@@ -16,9 +16,17 @@ class Drawer extends Component {
     this.setState({ showDrawer: !this.state.showDrawer })
   }
 
+  changeDrawerClass = () => {
+    if (this.state.showDrawer) {
+      return "drawer drawer-view"
+    } else {
+      return "drawer drawer-hide"
+    }
+  }
+
   render() {
     return (
-      <div className="drawer">
+      <div className={ this.changeDrawerClass() }>
         <div className="tab-container">
           <div className="mock-side"></div>
           <div className="tab">

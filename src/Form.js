@@ -87,16 +87,21 @@ export default class Form extends Component {
 
     event.currentTarget.childNodes.forEach(option => {
       if (option.selected) {
-        console.log(option.className)
         if (option.className === 'option-id') {
           this.setState({ idRequired: true })
-          console.log('TRUE')
         } else {
           this.setState({ idRequired: false })
-          console.log('FALSE')
         }
       }
     })
+  }
+
+  changeInputStyleOnStateChange = () => {
+    if (this.state.idRequired) {
+      return <input type='number'/>
+    } else {
+      return 
+    }
   }
 
   render() {
@@ -113,7 +118,7 @@ export default class Form extends Component {
           <option className='option-id'>/api/v1/states/:id</option>
           <option>/api/v1/festivals</option>
         </select>
-        <input className='form-id-input' type='number'/>
+        { this.changeInputStyleOnStateChange() }
         <button type="submit">Send</button>
       </form>
     )

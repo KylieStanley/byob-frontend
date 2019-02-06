@@ -24,13 +24,29 @@ class Drawer extends Component {
     }
   }
 
+  changeMockSideClass = () => {
+    if (this.state.showDrawer) {
+      return 
+    } else {
+      return "mock-side"
+    }
+  }
+
+  changeTabClass = () => {
+    if (this.state.showDrawer) {
+      return "tab tab-view"
+    } else {
+      return "tab tab-hide"
+    }
+  }
+
   render() {
     return (
       <div className={ this.changeDrawerClass() }>
         <div className="tab-container">
-          <div className="mock-side"></div>
-          <div className="tab">
-            <i onClick={ this.changeDrawerDisplayState } className="fas fa-bars"></i>
+          <div className={ this.changeMockSideClass() }></div>
+          <div className={ this.changeTabClass() }>
+            <i onClick={ this.changeDrawerDisplayState } className="fas fa-bars drawer-view-btn"></i>
           </div>
         </div>
 

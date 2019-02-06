@@ -2,15 +2,18 @@
   height: 100%;
   width: 100%;
   z-index: 1;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  transition: all 1s;
 }
 
 .drawer-hide {
-  background-color: red;
+
 }
 
 .drawer-view {
   position: absolute;
-  background-color: orange;
   top: 160px;
 }
 
@@ -29,6 +32,13 @@
   width: 100px;
   height: 40px;
   margin: 0 auto;
+}
+
+.tab-view {
+  background-color: #fff;
+}
+
+.tab-hide {
   background-color: gray;
 }
 
@@ -36,5 +46,9 @@
   width: 300px;
   height: 40px;
   background-color: #989898;
+}
+
+.drawer-view-btn:hover {
+  cursor: pointer;
 }
 

@@ -1,0 +1,554 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Form
+    handleResult={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <select>
+          <option>
+            GET
+          </option>
+          <option>
+            POST
+          </option>
+          <option>
+            PUT
+          </option>
+          <option>
+            DELETE
+          </option>
+        </select>,
+        <select
+          onChange={[Function]}
+        >
+          <option>
+            /api/v1/states
+          </option>
+          <option
+            className="option-id"
+          >
+            /api/v1/states/:id
+          </option>
+          <option>
+            /api/v1/festivals
+          </option>
+          <option
+            className="option-id"
+          >
+            /api/v1/states?state_id=:id
+          </option>
+          <option
+            className="option-id"
+          >
+            /api/v1/states/:id/festivals
+          </option>
+          <option
+            className="option-id"
+          >
+            /api/v1/festivals/:id
+          </option>
+        </select>,
+        undefined,
+        <button
+          type="submit"
+        >
+          Send
+        </button>,
+      ],
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option>
+              GET
+            </option>,
+            <option>
+              POST
+            </option>,
+            <option>
+              PUT
+            </option>,
+            <option>
+              DELETE
+            </option>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "GET",
+            },
+            "ref": null,
+            "rendered": "GET",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "POST",
+            },
+            "ref": null,
+            "rendered": "POST",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "PUT",
+            },
+            "ref": null,
+            "rendered": "PUT",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "DELETE",
+            },
+            "ref": null,
+            "rendered": "DELETE",
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option>
+              /api/v1/states
+            </option>,
+            <option
+              className="option-id"
+            >
+              /api/v1/states/:id
+            </option>,
+            <option>
+              /api/v1/festivals
+            </option>,
+            <option
+              className="option-id"
+            >
+              /api/v1/states?state_id=:id
+            </option>,
+            <option
+              className="option-id"
+            >
+              /api/v1/states/:id/festivals
+            </option>,
+            <option
+              className="option-id"
+            >
+              /api/v1/festivals/:id
+            </option>,
+          ],
+          "onChange": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "/api/v1/states",
+            },
+            "ref": null,
+            "rendered": "/api/v1/states",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "/api/v1/states/:id",
+              "className": "option-id",
+            },
+            "ref": null,
+            "rendered": "/api/v1/states/:id",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "/api/v1/festivals",
+            },
+            "ref": null,
+            "rendered": "/api/v1/festivals",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "/api/v1/states?state_id=:id",
+              "className": "option-id",
+            },
+            "ref": null,
+            "rendered": "/api/v1/states?state_id=:id",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "/api/v1/states/:id/festivals",
+              "className": "option-id",
+            },
+            "ref": null,
+            "rendered": "/api/v1/states/:id/festivals",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "/api/v1/festivals/:id",
+              "className": "option-id",
+            },
+            "ref": null,
+            "rendered": "/api/v1/festivals/:id",
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Send",
+          "type": "submit",
+        },
+        "ref": null,
+        "rendered": "Send",
+        "type": "button",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <select>
+            <option>
+              GET
+            </option>
+            <option>
+              POST
+            </option>
+            <option>
+              PUT
+            </option>
+            <option>
+              DELETE
+            </option>
+          </select>,
+          <select
+            onChange={[Function]}
+          >
+            <option>
+              /api/v1/states
+            </option>
+            <option
+              className="option-id"
+            >
+              /api/v1/states/:id
+            </option>
+            <option>
+              /api/v1/festivals
+            </option>
+            <option
+              className="option-id"
+            >
+              /api/v1/states?state_id=:id
+            </option>
+            <option
+              className="option-id"
+            >
+              /api/v1/states/:id/festivals
+            </option>
+            <option
+              className="option-id"
+            >
+              /api/v1/festivals/:id
+            </option>
+          </select>,
+          undefined,
+          <button
+            type="submit"
+          >
+            Send
+          </button>,
+        ],
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <option>
+                GET
+              </option>,
+              <option>
+                POST
+              </option>,
+              <option>
+                PUT
+              </option>,
+              <option>
+                DELETE
+              </option>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "GET",
+              },
+              "ref": null,
+              "rendered": "GET",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "POST",
+              },
+              "ref": null,
+              "rendered": "POST",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "PUT",
+              },
+              "ref": null,
+              "rendered": "PUT",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "DELETE",
+              },
+              "ref": null,
+              "rendered": "DELETE",
+              "type": "option",
+            },
+          ],
+          "type": "select",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <option>
+                /api/v1/states
+              </option>,
+              <option
+                className="option-id"
+              >
+                /api/v1/states/:id
+              </option>,
+              <option>
+                /api/v1/festivals
+              </option>,
+              <option
+                className="option-id"
+              >
+                /api/v1/states?state_id=:id
+              </option>,
+              <option
+                className="option-id"
+              >
+                /api/v1/states/:id/festivals
+              </option>,
+              <option
+                className="option-id"
+              >
+                /api/v1/festivals/:id
+              </option>,
+            ],
+            "onChange": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "/api/v1/states",
+              },
+              "ref": null,
+              "rendered": "/api/v1/states",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "/api/v1/states/:id",
+                "className": "option-id",
+              },
+              "ref": null,
+              "rendered": "/api/v1/states/:id",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "/api/v1/festivals",
+              },
+              "ref": null,
+              "rendered": "/api/v1/festivals",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "/api/v1/states?state_id=:id",
+                "className": "option-id",
+              },
+              "ref": null,
+              "rendered": "/api/v1/states?state_id=:id",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "/api/v1/states/:id/festivals",
+                "className": "option-id",
+              },
+              "ref": null,
+              "rendered": "/api/v1/states/:id/festivals",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "/api/v1/festivals/:id",
+                "className": "option-id",
+              },
+              "ref": null,
+              "rendered": "/api/v1/festivals/:id",
+              "type": "option",
+            },
+          ],
+          "type": "select",
+        },
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Send",
+            "type": "submit",
+          },
+          "ref": null,
+          "rendered": "Send",
+          "type": "button",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

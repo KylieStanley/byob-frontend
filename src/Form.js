@@ -61,8 +61,8 @@ export default class Form extends Component {
     const response = await fetch(url, {
       method: this.state.method,
     })
-    const result = await response.json()
-    this.props.handleResult(result)
+
+    this.checkForOkResponse(response)
   }
 
 
@@ -74,8 +74,8 @@ export default class Form extends Component {
       },
        body: JSON.stringify(this.state.databaseObj)
     })
-    const result = await response.json()
-    this.props.handleResult(result)
+
+    this.checkForOkResponse(response)
   }
 
 
@@ -87,8 +87,8 @@ export default class Form extends Component {
       },
        body: JSON.stringify(this.state.databaseObj)
     })
-    const result = await response.json()
-    this.props.handleResult(result)
+
+    this.checkForOkResponse(response)
   }
 
 
@@ -97,14 +97,7 @@ export default class Form extends Component {
       method: this.state.method
     })
 
-    if (response.ok) {
-      const result = await response.json()
-      this.props.handleResult(result)      
-    } else {
-      const responseStatusText = response.statusText
-      const responseStatusCode = response.status
-      this.props.handleResult({ responseStatusCode, responseStatusText })
-    }
+    this.checkForOkResponse(response)
   }
 
   changeIdRequiredState = (e) => {
@@ -134,6 +127,17 @@ export default class Form extends Component {
       return <input onChange={ this.updatePath } placeholder="Enter an ID number" type='number'/>
     } else {
       return 
+    }
+  }
+
+  checkForOkResponse = async (response) => {
+    if (response.ok) {
+      const result = await response.json()
+      this.props.handleResult(result)      
+    } else {
+      const responseStatusText = response.statusText
+      const responseStatusCode = response.status
+      this.props.handleResult({ responseStatusCode, responseStatusText })
     }
   }
 

@@ -9,8 +9,8 @@ class App extends Component {
         <header className="App-header">
           <h1>BYOB FrontEnd</h1>
         </header>
-        <div className="main">
-          <nav>
+        <div className="main-grid">
+          <nav className="sidebar-nav">
             <h4>Table of Contents</h4>
             <a href="">endpoint</a>
             <a href="">endpoint</a>
@@ -18,7 +18,7 @@ class App extends Component {
             <a href="">endpoint</a>
             <a href="">endpoint</a>
           </nav>
-          <main>
+          <main className="main-content">
             <p>Are you building a tourism, vacation or music events/performances app?
              This API allows you to find data on all major 2019 music festivals 
              happening in over 20 states. Data is stored with a PostgresSQL database 
@@ -57,6 +57,8 @@ class App extends Component {
                 <code>PUT /api/v1/festivals/:festivalID</code>
 
                 <code>DELETE /api/v1/festivals/:festivalID</code>
+
+                <h3 className='bottom-indicator'>bottom of page</h3>
           </main>
         </div>
         <Drawer />

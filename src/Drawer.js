@@ -1,25 +1,62 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Drawer.css'
 import Form from './Form'
 import ExampleContainer from './ExampleContainer'
 
-const Drawer = () => {
-  return (
-  <div className="drawer">
-    <div className="tab-container">
-      <div className="mock-side"></div>
-      <div className="tab">
-        <i class="fas fa-bars"></i>
+class Drawer extends Component {
+  constructor() {
+    super()
+    this.state = {
+      showDrawer: false
+    }
+  }
+
+  changeDrawerDisplayState = (event) => {
+    event.preventDefault()
+    this.setState({ showDrawer: !this.state.showDrawer })
+  }
+
+  changeDrawerClass = () => {
+    if (this.state.showDrawer) {
+      return "drawer drawer-view"
+    } else {
+      return "drawer drawer-hide"
+    }
+  }
+
+  changeMockSideClass = () => {
+    if (this.state.showDrawer) {
+      return "mock-sidebar mock-sidebar-view"
+    } else {
+      return "mock-sidebar mock-sidebar-hide"
+    }
+  }
+
+  changeTabClass = () => {
+    if (this.state.showDrawer) {
+      return "tab tab-view"
+    } else {
+      return "tab tab-hide"
+    }
+  }
+
+  render() {
+    return (
+      <div className={ this.changeDrawerClass() }>
+        <div className="tab-container">
+          <div className={ this.changeMockSideClass() }></div>
+          <div className={ this.changeTabClass() }>
+            <i onClick={ this.changeDrawerDisplayState } className="fas fa-bars drawer-view-btn"></i>
+          </div>
+        </div>
+
+        <div>
+          <Form />
+          <ExampleContainer />
+        </div>
       </div>
-    </div>
-
-    <div>
-      <Form />
-      <ExampleContainer />
-    </div>
-
-  </div>
-  )
+    )    
+  }
 }
 
 export default Drawer

@@ -1,6 +1,20 @@
 .drawer {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
   position: absolute;
-  bottom: 0;
+  top: 100%;
+  transition: all 1s;
+}
+
+.drawer-hide {
+
+}
+
+.drawer-view {
+  position: absolute;
+  top: 160px;
 }
 
 .tab-container {
@@ -13,17 +27,44 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
   width: 100px;
   height: 40px;
   margin: 0 auto;
-  background-color: gray;
+  transition: background-color 1s, 
+              border-top-left-radius 1s 1.5s,
+              border-top-right-radius 1s 1.5s;
 }
 
-.mock-side {
+.tab-view {
+  background-color: #fff;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.tab-hide {
+  background-color: gray;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.mock-sidebar {
+  transition: width 1s 1.5s,
+              height 1s,
+              background-color 1s;
+}
+
+.mock-sidebar-hide {
   width: 300px;
   height: 40px;
   background-color: #989898;
+}
+
+.mock-sidebar-view {
+  width: 0;
+  background-color: transparent;
+}
+
+.drawer-view-btn:hover {
+  cursor: pointer;
 }
 

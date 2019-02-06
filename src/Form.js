@@ -6,7 +6,8 @@ export default class Form extends Component {
     this.state = {
       method: 'GET',
       path: '/api/v1/states',
-      databaseObj: {}
+      databaseObj: {},
+      idRequired: false
     }
   }
 
@@ -81,21 +82,43 @@ export default class Form extends Component {
 
   }
 
+  changeIdRequiredState = (event) => {
+    event.preventDefault()
 
+    event.currentTarget.childNodes.forEach(option => {
+      if (option.selected) {
+        if (option.className === 'option-id') {
+          this.setState({ idRequired: true })
+        } else {
+          this.setState({ idRequired: false })
+        }
+      }
+    })
+  }
+
+  changeInputStyleOnStateChange = () => {
+    if (this.state.idRequired) {
+      return <input type='number'/>
+    } else {
+      return 
+    }
+  }
 
   render() {
     return (
-      <form onSubmit={this.submitRequest}>
+      <form>
         <select>
           <option>GET</option>
           <option>POST</option>
           <option>PUT</option>
           <option>DELETE</option>
         </select>
-        <select>
+        <select onChange={this.changeIdRequiredState}>
           <option>/api/v1/states</option>
+          <option className='option-id'>/api/v1/states/:id</option>
           <option>/api/v1/festivals</option>
         </select>
+        { this.changeInputStyleOnStateChange() }
         <button type="submit">Send</button>
       </form>
     )

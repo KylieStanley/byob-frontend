@@ -97,11 +97,10 @@ export default class Form extends Component {
     this.props.handleResult(result)
   }
 
-  changeIdRequiredState = (event) => {
-    event.preventDefault()
-
-    event.currentTarget.childNodes.forEach(option => {
-
+  changeIdRequiredState = (e) => {
+    e.preventDefault()
+   
+    e.currentTarget.childNodes.forEach(option => {
       if (option.selected) {
         this.setState({ path: option.innerText})
         if (option.className === 'option-id') {

@@ -26,9 +26,9 @@ class Drawer extends Component {
 
   changeMockSideClass = () => {
     if (this.state.showDrawer) {
-      return 
+      return "mock-sidebar mock-sidebar-view"
     } else {
-      return "mock-side"
+      return "mock-sidebar mock-sidebar-hide"
     }
   }
 

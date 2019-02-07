@@ -20,55 +20,23 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        <h2>
-          Example Response:
-        </h2>,
-        <pre>
-          <code>
-            {}
-          </code>
-        </pre>,
-      ],
+      "children": <h2>
+        Select an example response above
+      </h2>,
       "className": "example-container",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Example Response:",
-        },
-        "ref": null,
-        "rendered": "Example Response:",
-        "type": "h2",
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "Select an example response above",
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <code>
-            {}
-          </code>,
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "{}",
-          },
-          "ref": null,
-          "rendered": "{}",
-          "type": "code",
-        },
-        "type": "pre",
-      },
-    ],
+      "ref": null,
+      "rendered": "Select an example response above",
+      "type": "h2",
+    },
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -77,55 +45,23 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [
-          <h2>
-            Example Response:
-          </h2>,
-          <pre>
-            <code>
-              {}
-            </code>
-          </pre>,
-        ],
+        "children": <h2>
+          Select an example response above
+        </h2>,
         "className": "example-container",
       },
       "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Example Response:",
-          },
-          "ref": null,
-          "rendered": "Example Response:",
-          "type": "h2",
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Select an example response above",
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <code>
-              {}
-            </code>,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "{}",
-            },
-            "ref": null,
-            "rendered": "{}",
-            "type": "code",
-          },
-          "type": "pre",
-        },
-      ],
+        "ref": null,
+        "rendered": "Select an example response above",
+        "type": "h2",
+      },
       "type": "div",
     },
   ],

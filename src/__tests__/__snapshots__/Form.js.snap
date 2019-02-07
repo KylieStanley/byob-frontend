@@ -73,6 +73,7 @@ ShallowWrapper {
         >
           Send
         </button>,
+        null,
       ],
       "onSubmit": [Function],
     },
@@ -271,6 +272,7 @@ ShallowWrapper {
         "rendered": "Send",
         "type": "button",
       },
+      null,
     ],
     "type": "form",
   },
@@ -333,6 +335,7 @@ ShallowWrapper {
           >
             Send
           </button>,
+          null,
         ],
         "onSubmit": [Function],
       },
@@ -531,6 +534,7 @@ ShallowWrapper {
           "rendered": "Send",
           "type": "button",
         },
+        null,
       ],
       "type": "form",
     },

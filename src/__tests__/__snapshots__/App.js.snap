@@ -35,31 +35,27 @@ ShallowWrapper {
             <h4>
               Table of Contents
             </h4>
-            <a
-              href=""
+            <button
+              className="sidebar-links"
+              id="top"
+              onClick={[Function]}
             >
-              endpoint
-            </a>
-            <a
-              href=""
+              top of page
+            </button>
+            <button
+              className="sidebar-links"
+              id="states"
+              onClick={[Function]}
             >
-              endpoint
-            </a>
-            <a
-              href=""
+              States Endpoints
+            </button>
+            <button
+              className="sidebar-links"
+              id="festivals"
+              onClick={[Function]}
             >
-              endpoint
-            </a>
-            <a
-              href=""
-            >
-              endpoint
-            </a>
-            <a
-              href=""
-            >
-              endpoint
-            </a>
+              Fesitvals Endpoints
+            </button>
           </nav>
           <main
             className="main-content"
@@ -127,11 +123,6 @@ ShallowWrapper {
             <code>
               DELETE /api/v1/festivals/:festivalID
             </code>
-            <h3
-              className="bottom-indicator"
-            >
-              bottom of page
-            </h3>
           </main>
         </div>,
         <Drawer />,
@@ -176,31 +167,27 @@ ShallowWrapper {
               <h4>
                 Table of Contents
               </h4>
-              <a
-                href=""
+              <button
+                className="sidebar-links"
+                id="top"
+                onClick={[Function]}
               >
-                endpoint
-              </a>
-              <a
-                href=""
+                top of page
+              </button>
+              <button
+                className="sidebar-links"
+                id="states"
+                onClick={[Function]}
               >
-                endpoint
-              </a>
-              <a
-                href=""
+                States Endpoints
+              </button>
+              <button
+                className="sidebar-links"
+                id="festivals"
+                onClick={[Function]}
               >
-                endpoint
-              </a>
-              <a
-                href=""
-              >
-                endpoint
-              </a>
-              <a
-                href=""
-              >
-                endpoint
-              </a>
+                Fesitvals Endpoints
+              </button>
             </nav>,
             <main
               className="main-content"
@@ -268,11 +255,6 @@ ShallowWrapper {
               <code>
                 DELETE /api/v1/festivals/:festivalID
               </code>
-              <h3
-                className="bottom-indicator"
-              >
-                bottom of page
-              </h3>
             </main>,
           ],
           "className": "main-grid",
@@ -288,31 +270,27 @@ ShallowWrapper {
                 <h4>
                   Table of Contents
                 </h4>,
-                <a
-                  href=""
+                <button
+                  className="sidebar-links"
+                  id="top"
+                  onClick={[Function]}
                 >
-                  endpoint
-                </a>,
-                <a
-                  href=""
+                  top of page
+                </button>,
+                <button
+                  className="sidebar-links"
+                  id="states"
+                  onClick={[Function]}
                 >
-                  endpoint
-                </a>,
-                <a
-                  href=""
+                  States Endpoints
+                </button>,
+                <button
+                  className="sidebar-links"
+                  id="festivals"
+                  onClick={[Function]}
                 >
-                  endpoint
-                </a>,
-                <a
-                  href=""
-                >
-                  endpoint
-                </a>,
-                <a
-                  href=""
-                >
-                  endpoint
-                </a>,
+                  Fesitvals Endpoints
+                </button>,
               ],
               "className": "sidebar-nav",
             },
@@ -334,60 +312,42 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "endpoint",
-                  "href": "",
+                  "children": "top of page",
+                  "className": "sidebar-links",
+                  "id": "top",
+                  "onClick": [Function],
                 },
                 "ref": null,
-                "rendered": "endpoint",
-                "type": "a",
+                "rendered": "top of page",
+                "type": "button",
               },
               Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "endpoint",
-                  "href": "",
+                  "children": "States Endpoints",
+                  "className": "sidebar-links",
+                  "id": "states",
+                  "onClick": [Function],
                 },
                 "ref": null,
-                "rendered": "endpoint",
-                "type": "a",
+                "rendered": "States Endpoints",
+                "type": "button",
               },
               Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "endpoint",
-                  "href": "",
+                  "children": "Fesitvals Endpoints",
+                  "className": "sidebar-links",
+                  "id": "festivals",
+                  "onClick": [Function],
                 },
                 "ref": null,
-                "rendered": "endpoint",
-                "type": "a",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "endpoint",
-                  "href": "",
-                },
-                "ref": null,
-                "rendered": "endpoint",
-                "type": "a",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "endpoint",
-                  "href": "",
-                },
-                "ref": null,
-                "rendered": "endpoint",
-                "type": "a",
+                "rendered": "Fesitvals Endpoints",
+                "type": "button",
               },
             ],
             "type": "nav",
@@ -461,15 +421,10 @@ ShallowWrapper {
                 <code>
                   DELETE /api/v1/festivals/:festivalID
                 </code>,
-                <h3
-                  className="bottom-indicator"
-                >
-                  bottom of page
-                </h3>,
               ],
               "className": "main-content",
             },
-            "ref": null,
+            "ref": "mainContent",
             "rendered": Array [
               Object {
                 "instance": null,
@@ -478,7 +433,7 @@ ShallowWrapper {
                 "props": Object {
                   "children": "Are you building a tourism, vacation or music events/performances app? This API allows you to find data on all major 2019 music festivals happening in over 20 states. Data is stored with a PostgresSQL database and the backend is built with Node.js, Express and Knex.js.",
                 },
-                "ref": null,
+                "ref": "top",
                 "rendered": "Are you building a tourism, vacation or music events/performances app? This API allows you to find data on all major 2019 music festivals happening in over 20 states. Data is stored with a PostgresSQL database and the backend is built with Node.js, Express and Knex.js.",
                 "type": "p",
               },
@@ -489,7 +444,7 @@ ShallowWrapper {
                 "props": Object {
                   "children": "States Endpoints",
                 },
-                "ref": null,
+                "ref": "states",
                 "rendered": "States Endpoints",
                 "type": "h3",
               },
@@ -599,7 +554,7 @@ ShallowWrapper {
                 "props": Object {
                   "children": "Festivals Endpoints",
                 },
-                "ref": null,
+                "ref": "festivals",
                 "rendered": "Festivals Endpoints",
                 "type": "h3",
               },
@@ -702,18 +657,6 @@ ShallowWrapper {
                 "rendered": "DELETE /api/v1/festivals/:festivalID",
                 "type": "code",
               },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "bottom of page",
-                  "className": "bottom-indicator",
-                },
-                "ref": null,
-                "rendered": "bottom of page",
-                "type": "h3",
-              },
             ],
             "type": "main",
           },
@@ -755,31 +698,27 @@ ShallowWrapper {
               <h4>
                 Table of Contents
               </h4>
-              <a
-                href=""
+              <button
+                className="sidebar-links"
+                id="top"
+                onClick={[Function]}
               >
-                endpoint
-              </a>
-              <a
-                href=""
+                top of page
+              </button>
+              <button
+                className="sidebar-links"
+                id="states"
+                onClick={[Function]}
               >
-                endpoint
-              </a>
-              <a
-                href=""
+                States Endpoints
+              </button>
+              <button
+                className="sidebar-links"
+                id="festivals"
+                onClick={[Function]}
               >
-                endpoint
-              </a>
-              <a
-                href=""
-              >
-                endpoint
-              </a>
-              <a
-                href=""
-              >
-                endpoint
-              </a>
+                Fesitvals Endpoints
+              </button>
             </nav>
             <main
               className="main-content"
@@ -847,11 +786,6 @@ ShallowWrapper {
               <code>
                 DELETE /api/v1/festivals/:festivalID
               </code>
-              <h3
-                className="bottom-indicator"
-              >
-                bottom of page
-              </h3>
             </main>
           </div>,
           <Drawer />,
@@ -896,31 +830,27 @@ ShallowWrapper {
                 <h4>
                   Table of Contents
                 </h4>
-                <a
-                  href=""
+                <button
+                  className="sidebar-links"
+                  id="top"
+                  onClick={[Function]}
                 >
-                  endpoint
-                </a>
-                <a
-                  href=""
+                  top of page
+                </button>
+                <button
+                  className="sidebar-links"
+                  id="states"
+                  onClick={[Function]}
                 >
-                  endpoint
-                </a>
-                <a
-                  href=""
+                  States Endpoints
+                </button>
+                <button
+                  className="sidebar-links"
+                  id="festivals"
+                  onClick={[Function]}
                 >
-                  endpoint
-                </a>
-                <a
-                  href=""
-                >
-                  endpoint
-                </a>
-                <a
-                  href=""
-                >
-                  endpoint
-                </a>
+                  Fesitvals Endpoints
+                </button>
               </nav>,
               <main
                 className="main-content"
@@ -988,11 +918,6 @@ ShallowWrapper {
                 <code>
                   DELETE /api/v1/festivals/:festivalID
                 </code>
-                <h3
-                  className="bottom-indicator"
-                >
-                  bottom of page
-                </h3>
               </main>,
             ],
             "className": "main-grid",
@@ -1008,31 +933,27 @@ ShallowWrapper {
                   <h4>
                     Table of Contents
                   </h4>,
-                  <a
-                    href=""
+                  <button
+                    className="sidebar-links"
+                    id="top"
+                    onClick={[Function]}
                   >
-                    endpoint
-                  </a>,
-                  <a
-                    href=""
+                    top of page
+                  </button>,
+                  <button
+                    className="sidebar-links"
+                    id="states"
+                    onClick={[Function]}
                   >
-                    endpoint
-                  </a>,
-                  <a
-                    href=""
+                    States Endpoints
+                  </button>,
+                  <button
+                    className="sidebar-links"
+                    id="festivals"
+                    onClick={[Function]}
                   >
-                    endpoint
-                  </a>,
-                  <a
-                    href=""
-                  >
-                    endpoint
-                  </a>,
-                  <a
-                    href=""
-                  >
-                    endpoint
-                  </a>,
+                    Fesitvals Endpoints
+                  </button>,
                 ],
                 "className": "sidebar-nav",
               },
@@ -1054,60 +975,42 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "endpoint",
-                    "href": "",
+                    "children": "top of page",
+                    "className": "sidebar-links",
+                    "id": "top",
+                    "onClick": [Function],
                   },
                   "ref": null,
-                  "rendered": "endpoint",
-                  "type": "a",
+                  "rendered": "top of page",
+                  "type": "button",
                 },
                 Object {
                   "instance": null,
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "endpoint",
-                    "href": "",
+                    "children": "States Endpoints",
+                    "className": "sidebar-links",
+                    "id": "states",
+                    "onClick": [Function],
                   },
                   "ref": null,
-                  "rendered": "endpoint",
-                  "type": "a",
+                  "rendered": "States Endpoints",
+                  "type": "button",
                 },
                 Object {
                   "instance": null,
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "endpoint",
-                    "href": "",
+                    "children": "Fesitvals Endpoints",
+                    "className": "sidebar-links",
+                    "id": "festivals",
+                    "onClick": [Function],
                   },
                   "ref": null,
-                  "rendered": "endpoint",
-                  "type": "a",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "endpoint",
-                    "href": "",
-                  },
-                  "ref": null,
-                  "rendered": "endpoint",
-                  "type": "a",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "endpoint",
-                    "href": "",
-                  },
-                  "ref": null,
-                  "rendered": "endpoint",
-                  "type": "a",
+                  "rendered": "Fesitvals Endpoints",
+                  "type": "button",
                 },
               ],
               "type": "nav",
@@ -1181,15 +1084,10 @@ ShallowWrapper {
                   <code>
                     DELETE /api/v1/festivals/:festivalID
                   </code>,
-                  <h3
-                    className="bottom-indicator"
-                  >
-                    bottom of page
-                  </h3>,
                 ],
                 "className": "main-content",
               },
-              "ref": null,
+              "ref": "mainContent",
               "rendered": Array [
                 Object {
                   "instance": null,
@@ -1198,7 +1096,7 @@ ShallowWrapper {
                   "props": Object {
                     "children": "Are you building a tourism, vacation or music events/performances app? This API allows you to find data on all major 2019 music festivals happening in over 20 states. Data is stored with a PostgresSQL database and the backend is built with Node.js, Express and Knex.js.",
                   },
-                  "ref": null,
+                  "ref": "top",
                   "rendered": "Are you building a tourism, vacation or music events/performances app? This API allows you to find data on all major 2019 music festivals happening in over 20 states. Data is stored with a PostgresSQL database and the backend is built with Node.js, Express and Knex.js.",
                   "type": "p",
                 },
@@ -1209,7 +1107,7 @@ ShallowWrapper {
                   "props": Object {
                     "children": "States Endpoints",
                   },
-                  "ref": null,
+                  "ref": "states",
                   "rendered": "States Endpoints",
                   "type": "h3",
                 },
@@ -1319,7 +1217,7 @@ ShallowWrapper {
                   "props": Object {
                     "children": "Festivals Endpoints",
                   },
-                  "ref": null,
+                  "ref": "festivals",
                   "rendered": "Festivals Endpoints",
                   "type": "h3",
                 },
@@ -1421,18 +1319,6 @@ ShallowWrapper {
                   "ref": null,
                   "rendered": "DELETE /api/v1/festivals/:festivalID",
                   "type": "code",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "bottom of page",
-                    "className": "bottom-indicator",
-                  },
-                  "ref": null,
-                  "rendered": "bottom of page",
-                  "type": "h3",
                 },
               ],
               "type": "main",

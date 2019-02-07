@@ -1,0 +1,1478 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <header
+          className="App-header"
+        >
+          <h1>
+            BYOB FrontEnd
+          </h1>
+        </header>,
+        <div
+          className="main-grid"
+        >
+          <nav
+            className="sidebar-nav"
+          >
+            <h4>
+              Table of Contents
+            </h4>
+            <a
+              href=""
+            >
+              endpoint
+            </a>
+            <a
+              href=""
+            >
+              endpoint
+            </a>
+            <a
+              href=""
+            >
+              endpoint
+            </a>
+            <a
+              href=""
+            >
+              endpoint
+            </a>
+            <a
+              href=""
+            >
+              endpoint
+            </a>
+          </nav>
+          <main
+            className="main-content"
+          >
+            <p>
+              Are you building a tourism, vacation or music events/performances app? This API allows you to find data on all major 2019 music festivals happening in over 20 states. Data is stored with a PostgresSQL database and the backend is built with Node.js, Express and Knex.js.
+            </p>
+            <h3>
+              States Endpoints
+            </h3>
+            <code>
+              GET /api/v1/states
+            </code>
+            <p>
+              --&gt; returns an array of state objects
+            </p>
+            <code>
+              POST /api/v1/states
+            </code>
+            <code>
+              GET /api/v1/states:stateID
+            </code>
+            <p>
+              --&gt; returns an array with a specific state
+            </p>
+            <code>
+              GET  /api/v1/states?state_id=1
+            </code>
+            <p>
+              --&gt; returns an array with a specific state
+            </p>
+            <code>
+              PUT /api/v1/states/:stateID
+            </code>
+            <code>
+              DELETE /api/v1/states/:stateID
+            </code>
+            <h3>
+              Festivals Endpoints
+            </h3>
+            <code>
+              GET /api/v1/festivals
+            </code>
+            <p>
+              --&gt; returns an array of festival objects
+            </p>
+            <code>
+              POST /api/v1/festivals
+            </code>
+            <code>
+              GET /api/v1/states/:stateID/festivals
+            </code>
+            <p>
+              --&gt; returns an array of festival objects in a  state
+            </p>
+            <code>
+              GET /api/v1/festivals/:festivalID
+            </code>
+            <p>
+              --&gt; returns an array with a specific festival 
+            </p>
+            <code>
+              PUT /api/v1/festivals/:festivalID
+            </code>
+            <code>
+              DELETE /api/v1/festivals/:festivalID
+            </code>
+            <h3
+              className="bottom-indicator"
+            >
+              bottom of page
+            </h3>
+          </main>
+        </div>,
+        <Drawer />,
+      ],
+      "className": "App",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <h1>
+            BYOB FrontEnd
+          </h1>,
+          "className": "App-header",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "BYOB FrontEnd",
+          },
+          "ref": null,
+          "rendered": "BYOB FrontEnd",
+          "type": "h1",
+        },
+        "type": "header",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <nav
+              className="sidebar-nav"
+            >
+              <h4>
+                Table of Contents
+              </h4>
+              <a
+                href=""
+              >
+                endpoint
+              </a>
+              <a
+                href=""
+              >
+                endpoint
+              </a>
+              <a
+                href=""
+              >
+                endpoint
+              </a>
+              <a
+                href=""
+              >
+                endpoint
+              </a>
+              <a
+                href=""
+              >
+                endpoint
+              </a>
+            </nav>,
+            <main
+              className="main-content"
+            >
+              <p>
+                Are you building a tourism, vacation or music events/performances app? This API allows you to find data on all major 2019 music festivals happening in over 20 states. Data is stored with a PostgresSQL database and the backend is built with Node.js, Express and Knex.js.
+              </p>
+              <h3>
+                States Endpoints
+              </h3>
+              <code>
+                GET /api/v1/states
+              </code>
+              <p>
+                --&gt; returns an array of state objects
+              </p>
+              <code>
+                POST /api/v1/states
+              </code>
+              <code>
+                GET /api/v1/states:stateID
+              </code>
+              <p>
+                --&gt; returns an array with a specific state
+              </p>
+              <code>
+                GET  /api/v1/states?state_id=1
+              </code>
+              <p>
+                --&gt; returns an array with a specific state
+              </p>
+              <code>
+                PUT /api/v1/states/:stateID
+              </code>
+              <code>
+                DELETE /api/v1/states/:stateID
+              </code>
+              <h3>
+                Festivals Endpoints
+              </h3>
+              <code>
+                GET /api/v1/festivals
+              </code>
+              <p>
+                --&gt; returns an array of festival objects
+              </p>
+              <code>
+                POST /api/v1/festivals
+              </code>
+              <code>
+                GET /api/v1/states/:stateID/festivals
+              </code>
+              <p>
+                --&gt; returns an array of festival objects in a  state
+              </p>
+              <code>
+                GET /api/v1/festivals/:festivalID
+              </code>
+              <p>
+                --&gt; returns an array with a specific festival 
+              </p>
+              <code>
+                PUT /api/v1/festivals/:festivalID
+              </code>
+              <code>
+                DELETE /api/v1/festivals/:festivalID
+              </code>
+              <h3
+                className="bottom-indicator"
+              >
+                bottom of page
+              </h3>
+            </main>,
+          ],
+          "className": "main-grid",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h4>
+                  Table of Contents
+                </h4>,
+                <a
+                  href=""
+                >
+                  endpoint
+                </a>,
+                <a
+                  href=""
+                >
+                  endpoint
+                </a>,
+                <a
+                  href=""
+                >
+                  endpoint
+                </a>,
+                <a
+                  href=""
+                >
+                  endpoint
+                </a>,
+                <a
+                  href=""
+                >
+                  endpoint
+                </a>,
+              ],
+              "className": "sidebar-nav",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Table of Contents",
+                },
+                "ref": null,
+                "rendered": "Table of Contents",
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "endpoint",
+                  "href": "",
+                },
+                "ref": null,
+                "rendered": "endpoint",
+                "type": "a",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "endpoint",
+                  "href": "",
+                },
+                "ref": null,
+                "rendered": "endpoint",
+                "type": "a",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "endpoint",
+                  "href": "",
+                },
+                "ref": null,
+                "rendered": "endpoint",
+                "type": "a",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "endpoint",
+                  "href": "",
+                },
+                "ref": null,
+                "rendered": "endpoint",
+                "type": "a",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "endpoint",
+                  "href": "",
+                },
+                "ref": null,
+                "rendered": "endpoint",
+                "type": "a",
+              },
+            ],
+            "type": "nav",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Are you building a tourism, vacation or music events/performances app? This API allows you to find data on all major 2019 music festivals happening in over 20 states. Data is stored with a PostgresSQL database and the backend is built with Node.js, Express and Knex.js.
+                </p>,
+                <h3>
+                  States Endpoints
+                </h3>,
+                <code>
+                  GET /api/v1/states
+                </code>,
+                <p>
+                  --&gt; returns an array of state objects
+                </p>,
+                <code>
+                  POST /api/v1/states
+                </code>,
+                <code>
+                  GET /api/v1/states:stateID
+                </code>,
+                <p>
+                  --&gt; returns an array with a specific state
+                </p>,
+                <code>
+                  GET  /api/v1/states?state_id=1
+                </code>,
+                <p>
+                  --&gt; returns an array with a specific state
+                </p>,
+                <code>
+                  PUT /api/v1/states/:stateID
+                </code>,
+                <code>
+                  DELETE /api/v1/states/:stateID
+                </code>,
+                <h3>
+                  Festivals Endpoints
+                </h3>,
+                <code>
+                  GET /api/v1/festivals
+                </code>,
+                <p>
+                  --&gt; returns an array of festival objects
+                </p>,
+                <code>
+                  POST /api/v1/festivals
+                </code>,
+                <code>
+                  GET /api/v1/states/:stateID/festivals
+                </code>,
+                <p>
+                  --&gt; returns an array of festival objects in a  state
+                </p>,
+                <code>
+                  GET /api/v1/festivals/:festivalID
+                </code>,
+                <p>
+                  --&gt; returns an array with a specific festival 
+                </p>,
+                <code>
+                  PUT /api/v1/festivals/:festivalID
+                </code>,
+                <code>
+                  DELETE /api/v1/festivals/:festivalID
+                </code>,
+                <h3
+                  className="bottom-indicator"
+                >
+                  bottom of page
+                </h3>,
+              ],
+              "className": "main-content",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Are you building a tourism, vacation or music events/performances app? This API allows you to find data on all major 2019 music festivals happening in over 20 states. Data is stored with a PostgresSQL database and the backend is built with Node.js, Express and Knex.js.",
+                },
+                "ref": null,
+                "rendered": "Are you building a tourism, vacation or music events/performances app? This API allows you to find data on all major 2019 music festivals happening in over 20 states. Data is stored with a PostgresSQL database and the backend is built with Node.js, Express and Knex.js.",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "States Endpoints",
+                },
+                "ref": null,
+                "rendered": "States Endpoints",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "GET /api/v1/states",
+                },
+                "ref": null,
+                "rendered": "GET /api/v1/states",
+                "type": "code",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "--> returns an array of state objects",
+                },
+                "ref": null,
+                "rendered": "--> returns an array of state objects",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "POST /api/v1/states",
+                },
+                "ref": null,
+                "rendered": "POST /api/v1/states",
+                "type": "code",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "GET /api/v1/states:stateID",
+                },
+                "ref": null,
+                "rendered": "GET /api/v1/states:stateID",
+                "type": "code",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "--> returns an array with a specific state",
+                },
+                "ref": null,
+                "rendered": "--> returns an array with a specific state",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "GET  /api/v1/states?state_id=1",
+                },
+                "ref": null,
+                "rendered": "GET  /api/v1/states?state_id=1",
+                "type": "code",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "--> returns an array with a specific state",
+                },
+                "ref": null,
+                "rendered": "--> returns an array with a specific state",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "PUT /api/v1/states/:stateID",
+                },
+                "ref": null,
+                "rendered": "PUT /api/v1/states/:stateID",
+                "type": "code",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "DELETE /api/v1/states/:stateID",
+                },
+                "ref": null,
+                "rendered": "DELETE /api/v1/states/:stateID",
+                "type": "code",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Festivals Endpoints",
+                },
+                "ref": null,
+                "rendered": "Festivals Endpoints",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "GET /api/v1/festivals",
+                },
+                "ref": null,
+                "rendered": "GET /api/v1/festivals",
+                "type": "code",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "--> returns an array of festival objects",
+                },
+                "ref": null,
+                "rendered": "--> returns an array of festival objects",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "POST /api/v1/festivals",
+                },
+                "ref": null,
+                "rendered": "POST /api/v1/festivals",
+                "type": "code",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "GET /api/v1/states/:stateID/festivals",
+                },
+                "ref": null,
+                "rendered": "GET /api/v1/states/:stateID/festivals",
+                "type": "code",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "--> returns an array of festival objects in a  state",
+                },
+                "ref": null,
+                "rendered": "--> returns an array of festival objects in a  state",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "GET /api/v1/festivals/:festivalID",
+                },
+                "ref": null,
+                "rendered": "GET /api/v1/festivals/:festivalID",
+                "type": "code",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "--> returns an array with a specific festival ",
+                },
+                "ref": null,
+                "rendered": "--> returns an array with a specific festival ",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "PUT /api/v1/festivals/:festivalID",
+                },
+                "ref": null,
+                "rendered": "PUT /api/v1/festivals/:festivalID",
+                "type": "code",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "DELETE /api/v1/festivals/:festivalID",
+                },
+                "ref": null,
+                "rendered": "DELETE /api/v1/festivals/:festivalID",
+                "type": "code",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "bottom of page",
+                  "className": "bottom-indicator",
+                },
+                "ref": null,
+                "rendered": "bottom of page",
+                "type": "h3",
+              },
+            ],
+            "type": "main",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <header
+            className="App-header"
+          >
+            <h1>
+              BYOB FrontEnd
+            </h1>
+          </header>,
+          <div
+            className="main-grid"
+          >
+            <nav
+              className="sidebar-nav"
+            >
+              <h4>
+                Table of Contents
+              </h4>
+              <a
+                href=""
+              >
+                endpoint
+              </a>
+              <a
+                href=""
+              >
+                endpoint
+              </a>
+              <a
+                href=""
+              >
+                endpoint
+              </a>
+              <a
+                href=""
+              >
+                endpoint
+              </a>
+              <a
+                href=""
+              >
+                endpoint
+              </a>
+            </nav>
+            <main
+              className="main-content"
+            >
+              <p>
+                Are you building a tourism, vacation or music events/performances app? This API allows you to find data on all major 2019 music festivals happening in over 20 states. Data is stored with a PostgresSQL database and the backend is built with Node.js, Express and Knex.js.
+              </p>
+              <h3>
+                States Endpoints
+              </h3>
+              <code>
+                GET /api/v1/states
+              </code>
+              <p>
+                --&gt; returns an array of state objects
+              </p>
+              <code>
+                POST /api/v1/states
+              </code>
+              <code>
+                GET /api/v1/states:stateID
+              </code>
+              <p>
+                --&gt; returns an array with a specific state
+              </p>
+              <code>
+                GET  /api/v1/states?state_id=1
+              </code>
+              <p>
+                --&gt; returns an array with a specific state
+              </p>
+              <code>
+                PUT /api/v1/states/:stateID
+              </code>
+              <code>
+                DELETE /api/v1/states/:stateID
+              </code>
+              <h3>
+                Festivals Endpoints
+              </h3>
+              <code>
+                GET /api/v1/festivals
+              </code>
+              <p>
+                --&gt; returns an array of festival objects
+              </p>
+              <code>
+                POST /api/v1/festivals
+              </code>
+              <code>
+                GET /api/v1/states/:stateID/festivals
+              </code>
+              <p>
+                --&gt; returns an array of festival objects in a  state
+              </p>
+              <code>
+                GET /api/v1/festivals/:festivalID
+              </code>
+              <p>
+                --&gt; returns an array with a specific festival 
+              </p>
+              <code>
+                PUT /api/v1/festivals/:festivalID
+              </code>
+              <code>
+                DELETE /api/v1/festivals/:festivalID
+              </code>
+              <h3
+                className="bottom-indicator"
+              >
+                bottom of page
+              </h3>
+            </main>
+          </div>,
+          <Drawer />,
+        ],
+        "className": "App",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h1>
+              BYOB FrontEnd
+            </h1>,
+            "className": "App-header",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "BYOB FrontEnd",
+            },
+            "ref": null,
+            "rendered": "BYOB FrontEnd",
+            "type": "h1",
+          },
+          "type": "header",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <nav
+                className="sidebar-nav"
+              >
+                <h4>
+                  Table of Contents
+                </h4>
+                <a
+                  href=""
+                >
+                  endpoint
+                </a>
+                <a
+                  href=""
+                >
+                  endpoint
+                </a>
+                <a
+                  href=""
+                >
+                  endpoint
+                </a>
+                <a
+                  href=""
+                >
+                  endpoint
+                </a>
+                <a
+                  href=""
+                >
+                  endpoint
+                </a>
+              </nav>,
+              <main
+                className="main-content"
+              >
+                <p>
+                  Are you building a tourism, vacation or music events/performances app? This API allows you to find data on all major 2019 music festivals happening in over 20 states. Data is stored with a PostgresSQL database and the backend is built with Node.js, Express and Knex.js.
+                </p>
+                <h3>
+                  States Endpoints
+                </h3>
+                <code>
+                  GET /api/v1/states
+                </code>
+                <p>
+                  --&gt; returns an array of state objects
+                </p>
+                <code>
+                  POST /api/v1/states
+                </code>
+                <code>
+                  GET /api/v1/states:stateID
+                </code>
+                <p>
+                  --&gt; returns an array with a specific state
+                </p>
+                <code>
+                  GET  /api/v1/states?state_id=1
+                </code>
+                <p>
+                  --&gt; returns an array with a specific state
+                </p>
+                <code>
+                  PUT /api/v1/states/:stateID
+                </code>
+                <code>
+                  DELETE /api/v1/states/:stateID
+                </code>
+                <h3>
+                  Festivals Endpoints
+                </h3>
+                <code>
+                  GET /api/v1/festivals
+                </code>
+                <p>
+                  --&gt; returns an array of festival objects
+                </p>
+                <code>
+                  POST /api/v1/festivals
+                </code>
+                <code>
+                  GET /api/v1/states/:stateID/festivals
+                </code>
+                <p>
+                  --&gt; returns an array of festival objects in a  state
+                </p>
+                <code>
+                  GET /api/v1/festivals/:festivalID
+                </code>
+                <p>
+                  --&gt; returns an array with a specific festival 
+                </p>
+                <code>
+                  PUT /api/v1/festivals/:festivalID
+                </code>
+                <code>
+                  DELETE /api/v1/festivals/:festivalID
+                </code>
+                <h3
+                  className="bottom-indicator"
+                >
+                  bottom of page
+                </h3>
+              </main>,
+            ],
+            "className": "main-grid",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h4>
+                    Table of Contents
+                  </h4>,
+                  <a
+                    href=""
+                  >
+                    endpoint
+                  </a>,
+                  <a
+                    href=""
+                  >
+                    endpoint
+                  </a>,
+                  <a
+                    href=""
+                  >
+                    endpoint
+                  </a>,
+                  <a
+                    href=""
+                  >
+                    endpoint
+                  </a>,
+                  <a
+                    href=""
+                  >
+                    endpoint
+                  </a>,
+                ],
+                "className": "sidebar-nav",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Table of Contents",
+                  },
+                  "ref": null,
+                  "rendered": "Table of Contents",
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "endpoint",
+                    "href": "",
+                  },
+                  "ref": null,
+                  "rendered": "endpoint",
+                  "type": "a",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "endpoint",
+                    "href": "",
+                  },
+                  "ref": null,
+                  "rendered": "endpoint",
+                  "type": "a",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "endpoint",
+                    "href": "",
+                  },
+                  "ref": null,
+                  "rendered": "endpoint",
+                  "type": "a",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "endpoint",
+                    "href": "",
+                  },
+                  "ref": null,
+                  "rendered": "endpoint",
+                  "type": "a",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "endpoint",
+                    "href": "",
+                  },
+                  "ref": null,
+                  "rendered": "endpoint",
+                  "type": "a",
+                },
+              ],
+              "type": "nav",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Are you building a tourism, vacation or music events/performances app? This API allows you to find data on all major 2019 music festivals happening in over 20 states. Data is stored with a PostgresSQL database and the backend is built with Node.js, Express and Knex.js.
+                  </p>,
+                  <h3>
+                    States Endpoints
+                  </h3>,
+                  <code>
+                    GET /api/v1/states
+                  </code>,
+                  <p>
+                    --&gt; returns an array of state objects
+                  </p>,
+                  <code>
+                    POST /api/v1/states
+                  </code>,
+                  <code>
+                    GET /api/v1/states:stateID
+                  </code>,
+                  <p>
+                    --&gt; returns an array with a specific state
+                  </p>,
+                  <code>
+                    GET  /api/v1/states?state_id=1
+                  </code>,
+                  <p>
+                    --&gt; returns an array with a specific state
+                  </p>,
+                  <code>
+                    PUT /api/v1/states/:stateID
+                  </code>,
+                  <code>
+                    DELETE /api/v1/states/:stateID
+                  </code>,
+                  <h3>
+                    Festivals Endpoints
+                  </h3>,
+                  <code>
+                    GET /api/v1/festivals
+                  </code>,
+                  <p>
+                    --&gt; returns an array of festival objects
+                  </p>,
+                  <code>
+                    POST /api/v1/festivals
+                  </code>,
+                  <code>
+                    GET /api/v1/states/:stateID/festivals
+                  </code>,
+                  <p>
+                    --&gt; returns an array of festival objects in a  state
+                  </p>,
+                  <code>
+                    GET /api/v1/festivals/:festivalID
+                  </code>,
+                  <p>
+                    --&gt; returns an array with a specific festival 
+                  </p>,
+                  <code>
+                    PUT /api/v1/festivals/:festivalID
+                  </code>,
+                  <code>
+                    DELETE /api/v1/festivals/:festivalID
+                  </code>,
+                  <h3
+                    className="bottom-indicator"
+                  >
+                    bottom of page
+                  </h3>,
+                ],
+                "className": "main-content",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Are you building a tourism, vacation or music events/performances app? This API allows you to find data on all major 2019 music festivals happening in over 20 states. Data is stored with a PostgresSQL database and the backend is built with Node.js, Express and Knex.js.",
+                  },
+                  "ref": null,
+                  "rendered": "Are you building a tourism, vacation or music events/performances app? This API allows you to find data on all major 2019 music festivals happening in over 20 states. Data is stored with a PostgresSQL database and the backend is built with Node.js, Express and Knex.js.",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "States Endpoints",
+                  },
+                  "ref": null,
+                  "rendered": "States Endpoints",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "GET /api/v1/states",
+                  },
+                  "ref": null,
+                  "rendered": "GET /api/v1/states",
+                  "type": "code",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "--> returns an array of state objects",
+                  },
+                  "ref": null,
+                  "rendered": "--> returns an array of state objects",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "POST /api/v1/states",
+                  },
+                  "ref": null,
+                  "rendered": "POST /api/v1/states",
+                  "type": "code",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "GET /api/v1/states:stateID",
+                  },
+                  "ref": null,
+                  "rendered": "GET /api/v1/states:stateID",
+                  "type": "code",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "--> returns an array with a specific state",
+                  },
+                  "ref": null,
+                  "rendered": "--> returns an array with a specific state",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "GET  /api/v1/states?state_id=1",
+                  },
+                  "ref": null,
+                  "rendered": "GET  /api/v1/states?state_id=1",
+                  "type": "code",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "--> returns an array with a specific state",
+                  },
+                  "ref": null,
+                  "rendered": "--> returns an array with a specific state",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "PUT /api/v1/states/:stateID",
+                  },
+                  "ref": null,
+                  "rendered": "PUT /api/v1/states/:stateID",
+                  "type": "code",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "DELETE /api/v1/states/:stateID",
+                  },
+                  "ref": null,
+                  "rendered": "DELETE /api/v1/states/:stateID",
+                  "type": "code",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Festivals Endpoints",
+                  },
+                  "ref": null,
+                  "rendered": "Festivals Endpoints",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "GET /api/v1/festivals",
+                  },
+                  "ref": null,
+                  "rendered": "GET /api/v1/festivals",
+                  "type": "code",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "--> returns an array of festival objects",
+                  },
+                  "ref": null,
+                  "rendered": "--> returns an array of festival objects",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "POST /api/v1/festivals",
+                  },
+                  "ref": null,
+                  "rendered": "POST /api/v1/festivals",
+                  "type": "code",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "GET /api/v1/states/:stateID/festivals",
+                  },
+                  "ref": null,
+                  "rendered": "GET /api/v1/states/:stateID/festivals",
+                  "type": "code",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "--> returns an array of festival objects in a  state",
+                  },
+                  "ref": null,
+                  "rendered": "--> returns an array of festival objects in a  state",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "GET /api/v1/festivals/:festivalID",
+                  },
+                  "ref": null,
+                  "rendered": "GET /api/v1/festivals/:festivalID",
+                  "type": "code",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "--> returns an array with a specific festival ",
+                  },
+                  "ref": null,
+                  "rendered": "--> returns an array with a specific festival ",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "PUT /api/v1/festivals/:festivalID",
+                  },
+                  "ref": null,
+                  "rendered": "PUT /api/v1/festivals/:festivalID",
+                  "type": "code",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "DELETE /api/v1/festivals/:festivalID",
+                  },
+                  "ref": null,
+                  "rendered": "DELETE /api/v1/festivals/:festivalID",
+                  "type": "code",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "bottom of page",
+                    "className": "bottom-indicator",
+                  },
+                  "ref": null,
+                  "rendered": "bottom of page",
+                  "type": "h3",
+                },
+              ],
+              "type": "main",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

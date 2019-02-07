@@ -59,7 +59,6 @@ export default class Form extends Component {
     }
   }
 
-
   submitGet = async (url) => {
     const response = await fetch(url, {
       method: this.state.method,
@@ -121,7 +120,7 @@ export default class Form extends Component {
   updatePath = (e) => {
     e.preventDefault()
 
-    const path = this.state.path.replace(':id', e.currentTarget.value)
+    const path = this.state.path.replace(':id', e.target.value)
     this.setState({ path })
   }
 

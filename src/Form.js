@@ -58,6 +58,8 @@ export default class Form extends Component {
       case 'DELETE':
         this.submitDelete(url)
         break
+      default:
+        return
     }
   }
 

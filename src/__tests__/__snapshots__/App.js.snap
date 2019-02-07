@@ -23,7 +23,7 @@ ShallowWrapper {
           className="App-header"
         >
           <h1>
-            BYOB FrontEnd
+            States & Festivals API Documentation
           </h1>
         </header>,
         <div
@@ -137,7 +137,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <h1>
-            BYOB FrontEnd
+            States & Festivals API Documentation
           </h1>,
           "className": "App-header",
         },
@@ -147,10 +147,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "BYOB FrontEnd",
+            "children": "States & Festivals API Documentation",
           },
           "ref": null,
-          "rendered": "BYOB FrontEnd",
+          "rendered": "States & Festivals API Documentation",
           "type": "h1",
         },
         "type": "header",
@@ -686,7 +686,7 @@ ShallowWrapper {
             className="App-header"
           >
             <h1>
-              BYOB FrontEnd
+              States & Festivals API Documentation
             </h1>
           </header>,
           <div
@@ -800,7 +800,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <h1>
-              BYOB FrontEnd
+              States & Festivals API Documentation
             </h1>,
             "className": "App-header",
           },
@@ -810,10 +810,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "BYOB FrontEnd",
+              "children": "States & Festivals API Documentation",
             },
             "ref": null,
-            "rendered": "BYOB FrontEnd",
+            "rendered": "States & Festivals API Documentation",
             "type": "h1",
           },
           "type": "header",

@@ -35,16 +35,31 @@ body * {
   display: flex;
   flex-direction: column;
   height: calc(100vh - 200px);
+  text-align: left;
+  padding-left: 30px;
+}
+
+.sidebar-links {
+  margin-bottom: 10px;
 }
 
 .main-content {
-  overflow-y: scroll;
-  height: calc(100vh - 220px);
   box-shadow: inset 0 -45px 130px -55px rgba(0, 0, 0, 1);
+  height: calc(100vh - 220px);
+  overflow-y: scroll;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+code:last-child {
+  margin-bottom: 50px;
 }
 
 code {
+  background-color: #C7DBFF;
   display: block;
+  padding: 10px;
 }
 
 .bottom-indicator {

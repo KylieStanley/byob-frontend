@@ -10,12 +10,8 @@ class App extends Component {
   scrollToElement = (e) => {
     e.preventDefault()
 
-    const destination = e.target.id
-
-    this.refs[destination].scrollIntoView({ 
-      behavior: 'smooth',
-      block: 'end'
-    });
+    const topPos = this.refs[e.target.id].offsetTop;
+    this.refs.mainContent.scrollTop = topPos-10;
   }
 
   render() {
@@ -27,14 +23,12 @@ class App extends Component {
         <div className="main-grid">
           <nav className="sidebar-nav">
             <h4>Table of Contents</h4>
-            <a href="" id='states' onClick={this.scrollToElement}>endpoint</a>
-            <a href="" id='festivals' onClick={this.scrollToElement}>endpoint</a>
-            <a href="">endpoint</a>
-            <a href="">endpoint</a>
-            <a href="">endpoint</a>
+            <a className='sidebar-links' href="" id='top' onClick={this.scrollToElement}>top of page</a>
+            <a className='sidebar-links' href="" id='states' onClick={this.scrollToElement}>States Endpoints</a>
+            <a className='sidebar-links' href="" id='festivals' onClick={this.scrollToElement}>Fesitvals Endpoints</a>
           </nav>
-          <main className="main-content">
-            <p>Are you building a tourism, vacation or music events/performances app?
+          <main ref='mainContent' className="main-content">
+            <p ref='top'>Are you building a tourism, vacation or music events/performances app?
              This API allows you to find data on all major 2019 music festivals 
              happening in over 20 states. Data is stored with a PostgresSQL database 
              and the backend is built with Node.js, Express and Knex.js.</p>
@@ -72,8 +66,6 @@ class App extends Component {
                 <code>PUT /api/v1/festivals/:festivalID</code>
 
                 <code>DELETE /api/v1/festivals/:festivalID</code>
-
-                <h3 className='bottom-indicator'>bottom of page</h3>
           </main>
         </div>
         <Drawer />

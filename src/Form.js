@@ -7,7 +7,8 @@ export default class Form extends Component {
       method: 'GET',
       path: '/api/v1/states',
       databaseObj: {},
-      idRequired: false
+      idRequired: false,
+      isLoading: false
     }
   }
 
@@ -43,6 +44,7 @@ export default class Form extends Component {
   }
 
   checkMethods = (url) => {
+    this.setState({ isLoading: true })
     switch (this.state.method) {
       case 'GET':
         this.submitGet(url)
@@ -135,12 +137,22 @@ export default class Form extends Component {
   checkForOkResponse = async (response) => {
     if (response.ok) {
       const result = await response.json()
-      this.props.handleResult(result)      
+      await this.setState({ isLoading: false })    
+      this.props.handleResult(result)  
     } else {
       const responseStatusText = response.statusText
       const responseStatusCode = response.status
       const responseErrorMessage = await response.json()
+      await this.setState({ isLoading: false })
       this.props.handleResult({ responseStatusCode, responseStatusText, responseErrorMessage })
+    }
+  }
+
+  isLoadingIndicator = () => {
+    if (this.state.isLoading) {
+      return <h1>Loading</h1>
+    } else {
+      return null
     }
   }
 
@@ -163,6 +175,7 @@ export default class Form extends Component {
         </select>
         { this.changeInputStyleOnStateChange() }
         <button type="submit">Send</button>
+        { this.isLoadingIndicator() }
       </form>
     )
   }

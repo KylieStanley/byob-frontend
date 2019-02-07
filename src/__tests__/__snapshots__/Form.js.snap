@@ -21,7 +21,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <select>
+        <select
+          onChange={[Function]}
+        >
           <option>
             GET
           </option>
@@ -95,6 +97,7 @@ ShallowWrapper {
               DELETE
             </option>,
           ],
+          "onChange": [Function],
         },
         "ref": null,
         "rendered": Array [
@@ -278,7 +281,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <select>
+          <select
+            onChange={[Function]}
+          >
             <option>
               GET
             </option>
@@ -352,6 +357,7 @@ ShallowWrapper {
                 DELETE
               </option>,
             ],
+            "onChange": [Function],
           },
           "ref": null,
           "rendered": Array [

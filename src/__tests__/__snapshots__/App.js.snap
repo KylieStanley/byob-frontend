@@ -1476,5 +1476,3 @@ ShallowWrapper {
   },
 }
 `;
-
-exports[`Drawer should match the snapshot 1`] = `undefined`;

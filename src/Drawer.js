@@ -23,6 +23,7 @@ export default class Drawer extends Component {
       if (this.state.showDrawer) {
         document.body.style.overflow = 'scroll' 
       } else {
+        document.documentElement.scrollTop = 0
         document.body.style.overflow = 'hidden' 
       }
     })

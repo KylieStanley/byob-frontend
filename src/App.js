@@ -3,6 +3,21 @@ import './App.css';
 import Drawer from './Drawer'
 
 class App extends Component {
+  constructor() {
+    super()
+  }
+
+  scrollToElement = (e) => {
+    e.preventDefault()
+
+    const destination = e.target.id
+
+    this.refs[destination].scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'end'
+    });
+  }
+
   render() {
     return (
       <div className="App">
@@ -12,8 +27,8 @@ class App extends Component {
         <div className="main-grid">
           <nav className="sidebar-nav">
             <h4>Table of Contents</h4>
-            <a href="">endpoint</a>
-            <a href="">endpoint</a>
+            <a href="" id='states' onClick={this.scrollToElement}>endpoint</a>
+            <a href="" id='festivals' onClick={this.scrollToElement}>endpoint</a>
             <a href="">endpoint</a>
             <a href="">endpoint</a>
             <a href="">endpoint</a>
@@ -24,7 +39,7 @@ class App extends Component {
              happening in over 20 states. Data is stored with a PostgresSQL database 
              and the backend is built with Node.js, Express and Knex.js.</p>
     
-              <h3>States Endpoints</h3>
+              <h3 ref='states'>States Endpoints</h3>
 
                 <code>GET /api/v1/states</code> 
                 <p>--> returns an array of state objects</p>
@@ -41,7 +56,7 @@ class App extends Component {
 
                 <code>DELETE /api/v1/states/:stateID</code>
 
-              <h3>Festivals Endpoints</h3>
+              <h3 ref='festivals'>Festivals Endpoints</h3>
 
                 <code>GET /api/v1/festivals</code>
                 <p>--> returns an array of festival objects</p>

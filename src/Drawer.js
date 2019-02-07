@@ -17,47 +17,27 @@ export default class Drawer extends Component {
     this.setState({ example })
   }
 
-  changeDrawerDisplayState = (event) => {
-    event.preventDefault()
-    this.setState({ showDrawer: !this.state.showDrawer })
-  }
-
-  changeDrawerClass = () => {
-    if (this.state.showDrawer) {
-      return "drawer drawer-view"
-    } else {
-      return "drawer drawer-hide"
-    }
-  }
-
-  changeMockSideClass = () => {
-    if (this.state.showDrawer) {
-      return "mock-sidebar mock-sidebar-view"
-    } else {
-      return "mock-sidebar mock-sidebar-hide"
-    }
-  }
-
-  changeTabClass = () => {
-    if (this.state.showDrawer) {
-      document.body.style.overflow = 'scroll' 
-      return "tab tab-view"
-    } else {
-      document.body.style.overflow = 'hidden' 
-      return "tab tab-hide"
-    }
+  changeDrawerDisplayState = (e) => {
+    e.preventDefault()
+    this.setState({ showDrawer: !this.state.showDrawer }, () => {
+      if (this.state.showDrawer) {
+        document.body.style.overflow = 'scroll' 
+      } else {
+        document.body.style.overflow = 'hidden' 
+      }
+    })
   }
 
   render() {
+    const { showDrawer } = this.state
     return (
-      <div className={ this.changeDrawerClass() }>
+      <div className={ `drawer ${showDrawer ? "drawer-view": "drawer-hide"}` }>
         <div className="tab-container">
-          <div className={ this.changeMockSideClass() }></div>
-          <div className={ this.changeTabClass() }>
+          <div className={ `mock-sidebar ${showDrawer ? "mock-sidebar-view": "mock-sidebar-hide"}` } />
+          <div className={ `tab ${showDrawer ? "tab-view": "tab-hide"}` }>
             <i onClick={ this.changeDrawerDisplayState } className="fas fa-bars drawer-view-btn"></i>
           </div>
         </div>
-
         <div>
           <Form handleResult={ this.handleResult } />
           <ExampleContainer example={ this.state.example } />

@@ -41,6 +41,21 @@ body * {
 
 .sidebar-links {
   margin-bottom: 10px;
+  outline: none;
+  background-color: transparent;
+  border-style: none;
+  color: #0b24fb; 
+  cursor: pointer;
+  display: inline;
+  font: inherit;
+  padding: 0;
+  text-align: start;
+  text-decoration: underline;
+  width: auto;
+}
+
+.sidebar-links:hover {
+  color: #6734cc;
 }
 
 .main-content {

@@ -3,7 +3,7 @@ import './App.css';
 import Drawer from './Drawer'
 
 class App extends Component {
-  
+
   scrollToElement = (e) => {
     e.preventDefault()
 
@@ -20,9 +20,9 @@ class App extends Component {
         <div className="main-grid">
           <nav className="sidebar-nav">
             <h4>Table of Contents</h4>
-            <a className='sidebar-links' href="" id='top' onClick={this.scrollToElement}>top of page</a>
-            <a className='sidebar-links' href="" id='states' onClick={this.scrollToElement}>States Endpoints</a>
-            <a className='sidebar-links' href="" id='festivals' onClick={this.scrollToElement}>Fesitvals Endpoints</a>
+            <button className='sidebar-links' id='top' onClick={this.scrollToElement}>top of page</button>
+            <button className='sidebar-links' id='states' onClick={this.scrollToElement}>States Endpoints</button>
+            <button className='sidebar-links' id='festivals' onClick={this.scrollToElement}>Fesitvals Endpoints</button>
           </nav>
           <main ref='mainContent' className="main-content">
             <p ref='top'>Are you building a tourism, vacation or music events/performances app?

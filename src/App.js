@@ -3,10 +3,7 @@ import './App.css';
 import Drawer from './Drawer'
 
 class App extends Component {
-  constructor() {
-    super()
-  }
-
+  
   scrollToElement = (e) => {
     e.preventDefault()
 

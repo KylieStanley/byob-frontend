@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>BYOB FrontEnd</h1>
+          <h1>States & Festivals API Documentation</h1>
         </header>
         <div className="main-grid">
           <nav className="sidebar-nav">
